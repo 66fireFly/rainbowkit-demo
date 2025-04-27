@@ -1,8 +1,8 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
- import Header from '../components/Header';
+
  import Info from '../components/Info';
  import NetworkSwitcher from '../components/Switcher';
 
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         />
         {/* <link href="/favicon.ico" rel="icon" /> */}
       </Head>
-      <Header />
+    
       <main className={styles.main}>
         <Info />
         <NetworkSwitcher />

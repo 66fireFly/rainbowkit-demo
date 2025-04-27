@@ -2,13 +2,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {  RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
-import {
-  mainnet,
-  polygon,
-  optimism,
-  arbitrum,
-  base,
-} from 'wagmi/chains';
+import Header from '../components/Header';
 import {
   QueryClientProvider,
   QueryClient,
@@ -21,6 +15,7 @@ function MyApp({Component,pageProps}: AppProps){
        <WagmiProvider config={config}>
  <QueryClientProvider client={client}>
         <RainbowKitProvider>
+          <Header></Header>
          <Component {...pageProps}/>
         </RainbowKitProvider>
       </QueryClientProvider>
